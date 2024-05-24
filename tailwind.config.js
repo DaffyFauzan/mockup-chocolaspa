@@ -8,6 +8,10 @@ module.exports = {
       },
       letterSpacing: {
         beranda: ["5px"],
+      },
+      height: {
+        '600':'600px',
+        '400':'400px',
       }
     }
   },

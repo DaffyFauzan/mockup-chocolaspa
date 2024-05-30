@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/77df8fadc9.js" crossorigin="anonymous"></script>
     <title>Web Chocolaspa</title>
@@ -12,65 +12,64 @@
 
 <body class="bg-white font-playfair">
     <!-- Navbar Start -->
-    <nav class="bg-white border-gray-200">
+    <nav id="navbar" class="bg-transparent border-gray-200 fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/identity/logo.png" class="h-8"
                     alt="Chocolaspa Logo" />
             </a>
-
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
-                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent text-white">
                     <li>
                         <a href="tentang-kami.html"
-                            class="block py-2 px-3 text-gray-600 hover:text-yellow-700 md:bg-transparent md:text-gray-600 md:p-0 md:hover:text-yellow-700">Tentang
+                            class="nav-link block py-2 px-3 hover:text-yellow-700 md:bg-transparent md:hover:text-yellow-700 md:p-0">Tentang
                             Kami</a>
                     </li>
                     <li>
                         <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
                             data-dropdown-trigger="hover" type="button"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 md:w-auto">Layanan
+                            class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 md:w-auto">
+                            Layanan
                         </button>
-
                         <!-- Dropdown menu -->
                         <div id="dropdownHover"
                             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                             <ul class="py-2 text-sm text-gray-600" aria-labelledby="dropdownHoverButton">
                                 <li>
-                                    <a href="service-tubuh.html" class="block px-4 py-2 hover:bg-gray-100">Perawatan
-                                        Tubuh</a>
+                                    <a href="service-tubuh.html"
+                                        class="dropdown-link block px-4 py-2 hover:bg-gray-100">Perawatan Tubuh</a>
                                 </li>
                                 <li>
-                                    <a href="service-wajah.html" class="block px-4 py-2 hover:bg-gray-100">Perawatan
-                                        Wajah</a>
+                                    <a href="service-wajah.html"
+                                        class="dropdown-link block px-4 py-2 hover:bg-gray-100">Perawatan Wajah</a>
                                 </li>
                                 <li>
-                                    <a href="service-rambut.html" class="block px-4 py-2 hover:bg-gray-100">Perawatan
-                                        Rambut</a>
+                                    <a href="service-rambut.html"
+                                        class="dropdown-link block px-4 py-2 hover:bg-gray-100">Perawatan Rambut</a>
                                 </li>
                                 <li>
-                                    <a href="service-kids.html" class="block px-4 py-2 hover:bg-gray-100">Kids & Baby
-                                        Spa</a>
+                                    <a href="service-kids.html"
+                                        class="dropdown-link block px-4 py-2 hover:bg-gray-100">Kids & Baby Spa</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <a href="promo.html"
-                            class="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">Promo</a>
+                            class="nav-link block py-2 px-3 rounded md:border-0 md:hover:text-yellow-700 md:p-0">Promo</a>
                     </li>
                     <li>
                         <a href="outlet.html"
-                            class="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">Outlet</a>
+                            class="nav-link block py-2 px-3 rounded md:border-0 md:hover:text-yellow-700 md:p-0">Outlet</a>
                     </li>
                     <li>
                         <a href="berita.html"
-                            class="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">Berita</a>
+                            class="nav-link block py-2 px-3 rounded md:border-0 md:hover:text-yellow-700 md:p-0">Berita</a>
                     </li>
                     <li>
                         <a href="galeri.html"
-                            class="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0">Galeri</a>
+                            class="nav-link block py-2 px-3 rounded md:border-0 md:hover:text-yellow-700 md:p-0">Galeri</a>
                     </li>
                 </ul>
             </div>
@@ -78,50 +77,62 @@
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Video background start -->
+    <!-- Header Start -->
     <div class="w-full py-40 relative">
-        <!-- Video background -->
-        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="https://chocolaspa.loolin-dev.com/media/files/shared/background-video.mp4" type="video/mp4">
+         <!-- Video background start -->
+         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="https://www.chocolaspa.com/media/files/shared/chocolaspa-web-banner-new.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
+        <!-- Video background end -->
 
-        <!-- Text background -->
-        <div class="flex justify-center py-28 relative z-10">
-            <div class="flex flex-col space-y-3">
-                <div class="flex justify-center">
-                    <h1 class="text-7xl text-white font-bold tracking-tighter uppercase">spa cokelat <span
-                            class="flex items-center justify-center">Pertama</span></h1>
-                </div>
-                <div class="flex justify-center">
-                    <p class="text-lg text-white tracking-beranda font-medium uppercase">di indonesia</p>
-                </div>
+        <!-- Overlay background start -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-65 z-1"></div>
+        <!-- Overlay background end -->
+
+        <!-- Text Header Start -->
+        <div class="flex justify-center py-24 relative z-10">
+            <div class="flex flex-col space-y-2 items-center">
+                <h1
+                    class="text-7xl text-transparent tracking-tight uppercase leading-none text-stroke-4 text-stroke-white">
+                    spa cokelat
+                </h1>
+                <h1
+                    class="text-7xl text-transparent tracking-tight uppercase leading-none text-stroke-4 text-stroke-white">
+                    pertama
+                </h1>
+                <p class="text-sm text-white tracking-beranda font-medium uppercase">
+                    di indonesia
+                </p>
             </div>
         </div>
+        <!-- Text Header End -->
     </div>
-    <!-- Video background end -->
+    <!-- Header End -->
 
     <!-- About section start -->
     <div class="py-20">
         <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center m-10 px-28">
             <!-- Text Description -->
             <div class="flex flex-col justify-center space-y-6 m-5">
-                <h1 class="text-4xl font-bold text-gray-800">Spa Cokelat Pertama Di Indonesia</h1>
-                <p class="opacity-65 leading-8 max-w-sm">Kami memiliki lebih dari 100 jenis perawatan head-to-toe
-                    seperti: body
-                    massage,
-                    hair spa, facial treatment, perawatan pranikah, perawatan khusus ibu hamil, salon bayi & anak, dan
-                    masih banyak lainnya.</p>
+                <h1 class="text-4xl font-bold text-gray-800">
+                    Spa Cokelat Pertama Di Indonesia
+                </h1>
+                <p class="opacity-65 leading-8 max-w-sm">
+                    Kami memiliki lebih dari 100 jenis perawatan head-to-toe seperti:
+                    body massage, hair spa, facial treatment, perawatan pranikah,
+                    perawatan khusus ibu hamil, salon bayi & anak, dan masih banyak
+                    lainnya.
+                </p>
                 <div class="flex flex-col border-l-4 border-yellow-800">
-                    <p class="ml-5">Refresh your inner beauty with Chocolaspa
+                    <p class="ml-5">Refresh your inner beauty with Chocolaspa</p>
                     <p class="text-sm ml-5 pt-5 text-yellow-700">CHOCOLASPA</p>
                 </div>
             </div>
 
             <!-- Image -->
             <div class="flex justify-center">
-                <img src="/img/img.png" alt="Spa Coklat" class="w-96">
+                <img src="/img/img.png" alt="Spa Coklat" class="w-96" />
             </div>
 
             <!-- Info stats -->
@@ -130,12 +141,12 @@
                     <p class="text-yellow-800 font-bold text-4xl">10+</p>
                     <h1 class="text-sm opacity-65 pl-5 uppercase">Tahun Berdiri</h1>
                 </div>
-                <hr class="w-48">
+                <hr class="w-48" />
                 <div class="space-y-2 py-5">
                     <p class="text-yellow-800 font-bold text-4xl">7+</p>
                     <h1 class="text-sm opacity-65 pl-5 uppercase">Cabang Outlet</h1>
                 </div>
-                <hr class="w-48">
+                <hr class="w-48" />
                 <div class="space-y-2 py-5">
                     <p class="text-yellow-800 font-bold text-4xl">100+</p>
                     <h1 class="text-sm opacity-65 pl-5 uppercase">Layanan Perawatan</h1>
@@ -146,72 +157,84 @@
     <!-- About section end -->
 
     <!-- Service section start -->
-<div class="bg-orange-100 py-36 relative overflow-hidden">
-    <!-- Vertically Rotated Text -->
-    <div class="absolute inset-0 flex items-center justify-start lg:justify-start">
-        <div class="font-semibold text-2xl text-white tracking-tighter" style="writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); font-size: 15rem; color: rgba(255, 255, 255,);">
-            treatment
-        </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 m-5 px-32 relative z-10">
-        <div class="flex flex-col justify-center space-y-5">
-            <p class="text-yellow-800">LAYANAN</p>
-            <h1 class="text-3xl font-medium max-w-sm">Perawatan terbaik di Chocolaspa</h1>
-            <p class="text-gray-600 max-w-xs leading-8">Berbagai macam layanan perawatan head-to-toe salon/spa
-                natural terbaik dari Chocolaspa untuk para Chocoladies</p>
-        </div>
-        <div id="controls-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/img/treatment-2.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="/img/treatment-3.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/img/treatment-4.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
+    <div class="bg-orange-100 py-36 relative overflow-hidden">
+        <!-- Vertically Rotated Text -->
+        <div class="absolute inset-0 flex items-center justify-start lg:justify-start">
+            <div class="font-semibold text-2xl text-white tracking-tighter" style="
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            font-size: 15rem;
+            color: rgba(255, 255, 255);
+          ">
+                treatment
             </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 m-5 px-32 relative z-10">
+            <div class="flex flex-col justify-center space-y-5">
+                <p class="text-yellow-800">LAYANAN</p>
+                <h1 class="text-3xl font-medium max-w-sm">
+                    Perawatan terbaik di Chocolaspa
+                </h1>
+                <p class="text-gray-600 max-w-xs leading-8">
+                    Berbagai macam layanan perawatan head-to-toe salon/spa natural
+                    terbaik dari Chocolaspa untuk para Chocoladies
+                </p>
+            </div>
+            <div id="controls-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/img/treatment-2.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..." />
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="/img/treatment-3.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..." />
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/img/treatment-4.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..." />
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
-</div>
-<!-- Service section end -->
-
+    <!-- Service section end -->
 
     <!-- Testimony section start -->
     <div class="bg-white py-20 m-10">
@@ -220,42 +243,50 @@
                 <h1 class="text-4xl font-bold text-yellow-700">Testimoni</h1>
             </div>
             <div class="flex justify-center p-10">
-                <p class="text-md opacity-65">Pengalaman mereka mencoba treatment dari Chocolaspa</p>
+                <p class="text-md opacity-65">
+                    Pengalaman mereka mencoba treatment dari Chocolaspa
+                </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="flex flex-col">
                     <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">THE BEST SPA THAT I'VE EVER TRY!! ya gimana ga the best, baru
-                            dateng
-                            udah disambut sama receptionist yg ramaaah banget. ditambah skill therapist nya udah
-                            terlatih, ga kaleng-kaleng. pokonya kalo me time disini berasa putri keraton!!</p>
+                        <p class="opacity-65 leading-8">
+                            THE BEST SPA THAT I'VE EVER TRY!! ya gimana ga the best, baru
+                            dateng udah disambut sama receptionist yg ramaaah banget.
+                            ditambah skill therapist nya udah terlatih, ga kaleng-kaleng.
+                            pokonya kalo me time disini berasa putri keraton!!
+                        </p>
                     </div>
                     <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="">
+                        <img src="/img/icon.png" class="w-14" alt="" />
                         <p class="text-yellow-700 p-4">Ana</p>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">Alhamdulillah.. chocolaspa adalah tempat spa pertama yg aku
-                            pilih
-                            setelah sekian lama akhirnya memutuskan untuk coba metime disalon/spa, dan hasilnya cocok
-                            banget. Selama ini selalu ambil paket VIP Pass</p>
+                        <p class="opacity-65 leading-8">
+                            Alhamdulillah.. chocolaspa adalah tempat spa pertama yg aku
+                            pilih setelah sekian lama akhirnya memutuskan untuk coba metime
+                            disalon/spa, dan hasilnya cocok banget. Selama ini selalu ambil
+                            paket VIP Pass
+                        </p>
                     </div>
                     <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="">
+                        <img src="/img/icon.png" class="w-14" alt="" />
                         <p class="text-yellow-700 p-4">Nur</p>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">Tempat ternyaman buat me time, apalagi untuk ibu-ibu muda yang
-                            butuh
-                            refreshing dan relaxing pikiran karena selain tempatnya yang nyaman, bersih, dan wangi,
-                            pelayanannya juga super duper ramah sekali.</p>
+                        <p class="opacity-65 leading-8">
+                            Tempat ternyaman buat me time, apalagi untuk ibu-ibu muda yang
+                            butuh refreshing dan relaxing pikiran karena selain tempatnya
+                            yang nyaman, bersih, dan wangi, pelayanannya juga super duper
+                            ramah sekali.
+                        </p>
                     </div>
                     <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="">
+                        <img src="/img/icon.png" class="w-14" alt="" />
                         <p class="text-yellow-700 p-4">Ela</p>
                     </div>
                 </div>
@@ -274,12 +305,18 @@
                 <p class="text-md opacity-65">Penawaran khusus dari Chocolaspa</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center">
-                <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                    class="h-80 w-auto rounded-lg" alt="">
-                <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                    class="h-80 w-auto rounded-lg" alt="">
-                <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                    class="h-80 w-auto rounded-lg" alt="">
+                <a href="isi-promo.html">
+                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
+                        class="h-80 w-auto rounded-lg" alt="" />
+                </a>
+                <a href="isi-promo.html">
+                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
+                        class="h-80 w-auto rounded-lg" alt="" />
+                </a>
+                <a href="isi-promo.html">
+                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
+                        class="h-80 w-auto rounded-lg" alt="" />
+                </a>
             </div>
         </div>
     </div>
@@ -291,7 +328,9 @@
             <div class="flex justify-between">
                 <div class="space-y-3">
                     <h1 class="text-3xl font-bold text-yellow-800">OUTLET</h1>
-                    <p class="text-lg text-gray-600">Outlet Chocolaspa yang bisa kamu datangi</p>
+                    <p class="text-lg text-gray-600">
+                        Outlet Chocolaspa yang bisa kamu datangi
+                    </p>
                 </div>
                 <div class="pt-12">
                     <a href="#" class="text-sm font-medium font-sans underline">OUTLET LAINNYA</a>
@@ -301,47 +340,56 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <!-- First outlet -->
                 <div class="flex flex-col">
-                    <div class="h-full p-16 rounded-md bg-white">
-                        <p class="pb-5"><i class="fa-light fa-location-dot"></i> Chocolaspa BNR</p>
-                        <hr class="pt-5">
-                        <p class="opacity-65 pb-10 max-w-xs leading-8">
-                            Jl. Bogor Nirwana Residence BNR No.25, RT.06/RW.12,
-                            Mulyaharja, Kec. Bogor Sel., Kota Bogor, Jawa Barat 16135
+                    <div class="h-full p-16 rounded-md bg-white hover:bg-gray-900 hover:text-white duration-500">
+                        <p class="pb-5">
+                            <i class="fa-solid fa-location-dot mr-2"></i> Chocolaspa BNR
                         </p>
-                        <a href="#" class="text-sm text-yellow-800 underline">0822-1300-0668</a>
+                        <hr class="pt-5" />
+                        <p class="opacity-65 pb-10 max-w-xs leading-8">
+                            Jl. Bogor Nirwana Residence BNR No.25, RT.06/RW.12, Mulyaharja,
+                            Kec. Bogor Sel., Kota Bogor, Jawa Barat 16135
+                        </p>
+                        <a href="#" class="text-sm underline hover:no-underline"><i
+                                class="fa-solid fa-phone-volume mr-2"></i> 0822-1300-0668</a>
                     </div>
                 </div>
 
                 <!-- Second outlet -->
                 <div class="flex flex-col">
-                    <div class="h-full p-16 rounded-md bg-white">
-                        <p class="pb-5"><i class="fa-light fa-location-dot"></i> Chocolaspa Taman Kencana</p>
-                        <hr class="pt-5">
-                        <p class="opacity-65 pb-10 max-w-xs leading-8">
-                            Jl. Pangrango No.25, Babakan, Kecamatan Bogor Tengah,
-                            Kota Bogor, Jawa Barat 16128
+                    <div class="h-full p-16 rounded-md bg-white hover:bg-gray-900 hover:text-white duration-500">
+                        <p class="pb-5">
+                            <i class="fa-solid fa-location-dot mr-2"></i> Chocolaspa Taman
+                            Kencana
                         </p>
-                        <a href="#" class="text-sm text-yellow-800 underline">0822-1300-0668</a>
+                        <hr class="pt-5" />
+                        <p class="opacity-65 pb-10 max-w-xs leading-8">
+                            Jl. Pangrango No.25, Babakan, Kecamatan Bogor Tengah, Kota
+                            Bogor, Jawa Barat 16128
+                        </p>
+                        <a href="#" class="text-sm underline hover:no-underline"><i
+                                class="fa-solid fa-phone-volume mr-2"></i> 0822-1300-0668</a>
                     </div>
                 </div>
 
                 <!-- Third outlet -->
                 <div class="flex flex-col">
-                    <div class="h-full p-16 rounded-md bg-white">
-                        <p class="pb-5"><i class="fa-light fa-location-dot"></i> Chocolaspa BNR</p>
-                        <hr class="pt-5">
-                        <p class="opacity-65 pb-10 max-w-xs leading-8">
-                            Jl. Re. Martadinata No.8, RT.03/RW.03, Sempur, Kecamatan
-                            Bogor Tengah, Kota Bogor, Jawa Barat 16129
+                    <div class="h-full p-16 rounded-md bg-white hover:bg-gray-900 hover:text-white duration-500">
+                        <p class="pb-5">
+                            <i class="fa-solid fa-location-dot mr-2"></i> Chocolaspa BNR
                         </p>
-                        <a href="#" class="text-sm text-yellow-800 underline">0822-1300-0668</a>
+                        <hr class="pt-5" />
+                        <p class="opacity-65 pb-10 max-w-xs leading-8">
+                            Jl. Re. Martadinata No.8, RT.03/RW.03, Sempur, Kecamatan Bogor
+                            Tengah, Kota Bogor, Jawa Barat 16129
+                        </p>
+                        <a href="#" class="text-sm underline hover:no-underline"><i
+                                class="fa-solid fa-phone-volume mr-2"></i> 0822-1300-0668</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Outlet section end -->
-
 
     <!-- Footer start -->
     <footer class="bg-white py-20">
@@ -352,14 +400,21 @@
                         <h2 class="mb-6 text-md text-yellow-700">Head Office</h2>
                         <ul class="text-gray-700">
                             <li class="mb-4">
-                                <p class="max-w-xs opacity-65">Jl. Bogor Nirwana Residence BNR No.25, RT.06/RW.12,
-                                    Mulyaharja, Kec. Bogor Sel., Kota Bogor, Jawa Barat 16135</p>
+                                <p class="max-w-xs opacity-65">
+                                    Jl. Bogor Nirwana Residence BNR No.25, RT.06/RW.12,
+                                    Mulyaharja, Kec. Bogor Sel., Kota Bogor, Jawa Barat 16135
+                                </p>
                             </li>
                             <li class="mb-4">
-                                <p class="max-w-xs opacity-65">+62 812-1336-2015</p>
+                                <p class="max-w-xs opacity-65">
+                                    <i class="fa-solid fa-phone-volume text-sm mr-2"></i>+62
+                                    812-1336-2015
+                                </p>
                             </li>
                             <li class="mb-4">
-                                <p class="max-w-xs opacity-65">tanyachocolaspa@gmail.com</p>
+                                <p class="max-w-xs opacity-65">
+                                    <i class="fa-solid fa-envelope text-sm mr-2"></i>tanyachocolaspa@gmail.com
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -367,17 +422,17 @@
                         <h2 class="mb-6 text-md text-yellow-700 uppercase">Informasi</h2>
                         <ul class="text-gray-700">
                             <li class="mb-4">
-                                <a href="tentang-kami.html" class="hover:text-yellow-800 opacity-65">Tentang Kami</a>
+                                <a href="tentang-kami.html" class="hover:text-yellow-800 opacity-65 duration-500">Tentang Kami</a>
                             </li>
                             <li class="mb-4">
-                                <a href="service-tubuh.html" class="hover:text-yellow-800 opacity-65">Perawatan
+                                <a href="service-tubuh.html" class="hover:text-yellow-800 opacity-65 duration-500">Perawatan
                                     Tubuh</a>
                             </li>
                             <li class="mb-4">
-                                <a href="promo.html" class="hover:text-yellow-800 opacity-65">Promo</a>
+                                <a href="promo.html" class="hover:text-yellow-800 opacity-65 duration-500">Promo</a>
                             </li>
                             <li class="mb-4">
-                                <a href="outlet.html" class="hover:text-yellow-800 opacity-65">Outlet</a>
+                                <a href="outlet.html" class="hover:text-yellow-800 opacity-65 duration-500">Outlet</a>
                             </li>
                         </ul>
                     </div>
@@ -385,13 +440,13 @@
                         <h2 class="mb-6 text-md text-yellow-700 uppercase">Telusuri</h2>
                         <ul class="text-gray-700">
                             <li class="mb-4">
-                                <a href="berita.html" class="hover:text-yellow-800 opacity-65">Berita</a>
+                                <a href="berita.html" class="hover:text-yellow-800 opacity-65 duration-500">Berita</a>
                             </li>
                             <li class="mb-4">
-                                <a href="galeri.html" class="hover:text-yellow-800 opacity-65">Galeri</a>
+                                <a href="galeri.html" class="hover:text-yellow-800 opacity-65 duration-500">Galeri</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:text-yellow-800 opacity-65">Kontak</a>
+                                <a href="#" class="hover:text-yellow-800 opacity-65 duration-500">Kontak</a>
                             </li>
                         </ul>
                     </div>
@@ -403,17 +458,56 @@
                     <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/identity/logo.png" class="h-10 me-3"
                         alt="Chocolaspa Logo" />
                 </a>
-                <span class="text-sm opacity-65 sm:text-center">© 2024 Developed by <a href="#"
-                        class="underline text-yellow-700">Loolin.</a></span>
+                <span class="text-sm opacity-65 sm:text-center">© 2024 Developed by
+                    <a href="#" class="underline text-yellow-700">Loolin.</a></span>
             </div>
         </div>
     </footer>
     <!-- Footer end -->
 
-
-
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     <script src="https://kit.fontawesome.com/77df8fadc9.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.getElementById("navbar");
+            const navLinks = document.querySelectorAll(
+                "#navbar-dropdown .nav-link"
+            );
+            const layananButton = document.getElementById("dropdownHoverButton");
+            const dropdownLinks = document.querySelectorAll(
+                "#dropdownHover .dropdown-link"
+            );
+
+            function setNavbarStyle(isScrolled) {
+                if (isScrolled) {
+                    navbar.classList.remove("bg-transparent");
+                    navbar.classList.add("bg-white", "shadow-md");
+                    navLinks.forEach((link) => {
+                        link.classList.remove("text-white");
+                        link.classList.add("text-gray-600");
+                    });
+                    layananButton.classList.remove("text-white");
+                    layananButton.classList.add("text-gray-600");
+                } else {
+                    navbar.classList.add("bg-transparent");
+                    navbar.classList.remove("bg-white", "shadow-md");
+                    navLinks.forEach((link) => {
+                        link.classList.remove("text-gray-600");
+                        link.classList.add("text-white");
+                    });
+                    layananButton.classList.remove("text-gray-600");
+                    layananButton.classList.add("text-white");
+                }
+            }
+
+            window.addEventListener("scroll", function () {
+                const isScrolled = window.scrollY > 0;
+                setNavbarStyle(isScrolled);
+            });
+
+            setNavbarStyle(window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>

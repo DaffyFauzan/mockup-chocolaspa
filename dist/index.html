@@ -15,8 +15,7 @@
     <nav id="navbar" class="bg-transparent border-gray-200 fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="/img/logo.png" class="h-8"
-                    alt="Chocolaspa Logo" />
+                <img src="/img/logo.png" class="h-8" alt="Chocolaspa Logo" />
             </a>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
@@ -79,9 +78,10 @@
 
     <!-- Header Start -->
     <div class="w-full py-40 relative">
-         <!-- Video background start -->
-         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="https://www.chocolaspa.com/media/files/shared/chocolaspa-web-banner-new.mp4" type="video/mp4" />
+        <!-- Video background start -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="https://www.chocolaspa.com/media/files/shared/chocolaspa-web-banner-new.mp4"
+                type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <!-- Video background end -->
@@ -160,7 +160,8 @@
     <div class="bg-orange-100 py-36 relative overflow-hidden">
         <!-- Vertically Rotated Text -->
         <div class="absolute inset-0 flex items-center justify-start lg:justify-start">
-            <div class="font-semibold text-2xl text-white tracking-tighter" style="
+            <div class="font-semibold text-2xl text-white tracking-tighter"
+            style="
             writing-mode: vertical-rl;
             text-orientation: mixed;
             transform: rotate(180deg);
@@ -296,8 +297,8 @@
     <!-- Testimony section end -->
 
     <!-- Promo section start -->
-    <div class="bg-white py-20 m-10">
-        <div class="container mx-auto px-32 flex flex-col space-y-5">
+    <div class="bg-white mx-auto py-20">
+        <div class="container px-40 flex flex-col space-y-5">
             <div class="flex justify-center">
                 <h1 class="text-4xl font-bold text-yellow-700">Promo</h1>
             </div>
@@ -305,17 +306,31 @@
                 <p class="text-md opacity-65">Penawaran khusus dari Chocolaspa</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center">
-                <a href="isi-promo.html">
-                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                        class="h-80 w-auto rounded-lg" alt="" />
+                <a href="isi-promo.html" class="relative group">
+                    <img src="https://www.chocolaspa.com/media/photos/shared/promo/ramadhan-promo.webp"
+                        class="h-[23rem] w-auto transform" alt="" />
+                    <!-- Overlay start-->
+                    <div
+                        class="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 duration-300">
+                        <div class="flex bg-white shadow-md p-5">
+                            <div class="font-light">
+                                <p class="text-sm opacity-65">Chocolaspa BSD</p>
+                                <p class="text-lg">Promo Ramadhan Chocolaspa BSD</p>
+                            </div>
+                            <div class="text-xl">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay end-->
                 </a>
                 <a href="isi-promo.html">
-                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                        class="h-80 w-auto rounded-lg" alt="" />
+                    <img src="https://www.chocolaspa.com/media/photos/shared/promo/chocolaspa-membership-2024.jpg"
+                        class="h-[23rem] w-auto" alt="" />
                 </a>
                 <a href="isi-promo.html">
-                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/promo/ramadhan-promo.webp"
-                        class="h-80 w-auto rounded-lg" alt="" />
+                    <img src="https://www.chocolaspa.com/media/photos/shared/promo/promo-1.jpg"
+                        class="h-[23rem] w-auto" alt="" />
                 </a>
             </div>
         </div>
@@ -422,10 +437,12 @@
                         <h2 class="mb-6 text-md text-yellow-700 uppercase">Informasi</h2>
                         <ul class="text-gray-700">
                             <li class="mb-4">
-                                <a href="tentang-kami.html" class="hover:text-yellow-800 opacity-65 duration-500">Tentang Kami</a>
+                                <a href="tentang-kami.html"
+                                    class="hover:text-yellow-800 opacity-65 duration-500">Tentang Kami</a>
                             </li>
                             <li class="mb-4">
-                                <a href="service-tubuh.html" class="hover:text-yellow-800 opacity-65 duration-500">Perawatan
+                                <a href="service-tubuh.html"
+                                    class="hover:text-yellow-800 opacity-65 duration-500">Perawatan
                                     Tubuh</a>
                             </li>
                             <li class="mb-4">

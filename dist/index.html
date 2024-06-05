@@ -7,6 +7,7 @@
     <link href="./output.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/77df8fadc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Web Chocolaspa</title>
 </head>
 
@@ -160,8 +161,7 @@
     <div class="bg-orange-100 py-36 relative overflow-hidden">
         <!-- Vertically Rotated Text -->
         <div class="absolute inset-0 flex items-center justify-start lg:justify-start">
-            <div class="font-semibold text-2xl text-white tracking-tighter"
-            style="
+            <div class="font-semibold text-2xl text-white tracking-tighter" style="
             writing-mode: vertical-rl;
             text-orientation: mixed;
             transform: rotate(180deg);
@@ -172,7 +172,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 m-5 px-32 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 m-5 px-32 w-full">
             <div class="flex flex-col justify-center space-y-5">
                 <p class="text-yellow-800">LAYANAN</p>
                 <h1 class="text-3xl font-medium max-w-sm">
@@ -183,55 +183,29 @@
                     terbaik dari Chocolaspa untuk para Chocoladies
                 </p>
             </div>
-            <div id="controls-carousel" class="relative w-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/treatment-2.png"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="..." />
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="/img/treatment-3.png"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="..." />
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/treatment-4.png"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            alt="..." />
+            <div class="w-full">
+                <div class="swiper multiple-slide-carousel swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-md h-[30rem] w-[25rem] flex justify-start items-end bg-cover"
+                                style="background-image: url('/img/treatment-2.png');">
+                                <span class="text-xl text-white p-5">Perawatan Tubuh</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-md h-[30rem] w-[25rem] flex justify-start items-end bg-cover"
+                                style="background-image: url('/img/treatment-3.png');">
+                                <span class="text-xl text-white p-5">Perawatan Wajah</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-indigo-50 rounded-md h-[30rem] w-[25rem] flex justify-start items-end bg-cover"
+                                style="background-image: url('/img/treatment-4.png');">
+                                <span class="text-xl text-white p-5">Perawatan Rambut</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                d="M5 1 1 5l4 4" />
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-dark dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
             </div>
         </div>
     </div>
@@ -239,56 +213,95 @@
 
     <!-- Testimony section start -->
     <div class="bg-white py-20 m-10">
-        <div class="flex flex-col px-28">
+        <div class="container mx-auto flex flex-col px-5 lg:px-28">
             <div class="flex justify-center">
                 <h1 class="text-4xl font-bold text-yellow-700">Testimoni</h1>
             </div>
             <div class="flex justify-center p-10">
-                <p class="text-md opacity-65">
+                <p class="text-md opacity-65 text-center">
                     Pengalaman mereka mencoba treatment dari Chocolaspa
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="flex flex-col">
-                    <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">
-                            THE BEST SPA THAT I'VE EVER TRY!! ya gimana ga the best, baru
-                            dateng udah disambut sama receptionist yg ramaaah banget.
-                            ditambah skill therapist nya udah terlatih, ga kaleng-kaleng.
-                            pokonya kalo me time disini berasa putri keraton!!
-                        </p>
+            <div class="swiper-container testimony-slide overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex flex-col items-start text-start">
+                            <div class="h-full p-10 shadow-md rounded-md bg-white">
+                                <p class="opacity-65 leading-8">
+                                    THE BEST SPA THAT I'VE EVER TRY!! ya gimana ga the best, baru
+                                    dateng udah disambut sama receptionist yg ramaaah banget.
+                                    ditambah skill therapist nya udah terlatih, ga kaleng-kaleng.
+                                    pokonya kalo me time disini berasa putri keraton!!
+                                </p>
+                            </div>
+                            <div class="flex items-start p-5 mt-5">
+                                <img src="/img/icon.png" class="w-14 rounded-full" alt="Icon" />
+                                <p class="text-yellow-700 p-4">Ana</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="" />
-                        <p class="text-yellow-700 p-4">Ana</p>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col items-start text-start">
+                            <div class="h-full p-10 shadow-md rounded-md bg-white">
+                                <p class="opacity-65 leading-8">
+                                    Alhamdulillah.. chocolaspa adalah tempat spa pertama yg aku
+                                    pilih setelah sekian lama akhirnya memutuskan untuk coba metime
+                                    disalon/spa, dan hasilnya cocok banget. Selama ini selalu ambil
+                                    paket VIP Pass
+                                </p>
+                            </div>
+                            <div class="flex items-start p-5 mt-5">
+                                <img src="/img/icon.png" class="w-14 rounded-full" alt="Icon" />
+                                <p class="text-yellow-700 p-4">Nur</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">
-                            Alhamdulillah.. chocolaspa adalah tempat spa pertama yg aku
-                            pilih setelah sekian lama akhirnya memutuskan untuk coba metime
-                            disalon/spa, dan hasilnya cocok banget. Selama ini selalu ambil
-                            paket VIP Pass
-                        </p>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col items-start text-start">
+                            <div class="h-full p-10 shadow-md rounded-md bg-white">
+                                <p class="opacity-65 leading-8">
+                                    Tempat ternyaman buat me time, apalagi untuk ibu-ibu muda yang
+                                    butuh refreshing dan relaxing pikiran karena selain tempatnya
+                                    yang nyaman, bersih, dan wangi, pelayanannya juga super duper
+                                    ramah sekali.
+                                </p>
+                            </div>
+                            <div class="flex items-start p-5 mt-5">
+                                <img src="/img/icon.png" class="w-14 rounded-full" alt="Icon" />
+                                <p class="text-yellow-700 p-4">Ela</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="" />
-                        <p class="text-yellow-700 p-4">Nur</p>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col items-start text-start">
+                            <div class="h-full p-10 shadow-md rounded-md bg-white">
+                                <p class="opacity-65 leading-8">
+                                    Klo ada bintang 10 mungkin saya kasih bintang 10. Staff nya ramah semua. Kebetulan
+                                    saya datang telat tapi tetep ga waiting list. Badan langsung berasa enteng dan
+                                    berasa lembab karena di scrub. Dan wangi coklat nya masih kerasa walau udah di
+                                    rumah.
+                                </p>
+                            </div>
+                            <div class="flex items-start p-5 mt-5">
+                                <img src="/img/icon.png" class="w-14 rounded-full" alt="Icon" />
+                                <p class="text-yellow-700 p-4">Nisa</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="h-full p-10 border shadow-lg">
-                        <p class="opacity-65 leading-8">
-                            Tempat ternyaman buat me time, apalagi untuk ibu-ibu muda yang
-                            butuh refreshing dan relaxing pikiran karena selain tempatnya
-                            yang nyaman, bersih, dan wangi, pelayanannya juga super duper
-                            ramah sekali.
-                        </p>
-                    </div>
-                    <div class="flex p-5 mt-5">
-                        <img src="/img/icon.png" class="w-14" alt="" />
-                        <p class="text-yellow-700 p-4">Ela</p>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col items-start text-start">
+                            <div class="h-full p-10 shadow-md rounded-md bg-white">
+                                <p class="opacity-65 leading-8">
+                                    Ibarat cinta, ini namanya jatuh cinta pada pandangan pertama. Pertama kali nyobain
+                                    treatment di chocolaspa pajajaran itu di bulan november kmarin. Langsung suka, dan
+                                    pastinya jadi bolak balik kesini mulu
+                                </p>
+                            </div>
+                            <div class="flex items-start p-5 mt-5">
+                                <img src="/img/icon.png" class="w-14 rounded-full" alt="Icon" />
+                                <p class="text-yellow-700 p-4">Feby</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -309,28 +322,56 @@
                 <a href="isi-promo.html" class="relative group">
                     <img src="https://www.chocolaspa.com/media/photos/shared/promo/ramadhan-promo.webp"
                         class="h-[23rem] w-auto transform" alt="" />
-                    <!-- Overlay start-->
+                    <!-- Overlay start -->
                     <div
-                        class="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 duration-300">
-                        <div class="flex bg-white shadow-md p-5">
-                            <div class="font-light">
-                                <p class="text-sm opacity-65">Chocolaspa BSD</p>
-                                <p class="text-lg">Promo Ramadhan Chocolaspa BSD</p>
-                            </div>
-                            <div class="text-xl">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
+                        class="absolute inset-0 bg-gradient-to-tr from-amber-900/50 to-orange-100/40 flex flex-col items-start justify-center p-7 text-white transition-opacity">
+                        <div class="flex mb-2 mt-56 p-3">
+                            <h1 class="text-lg font-light uppercase">Promo Ramadhan Chocolaspa BSD</h1>
+                            <i
+                                class="fa-solid fa-arrow-right-long transform scale-75 p-5 bg-white text-black rounded-full opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </div>
+                        <div class="absolute top-5 text-lg bg-white rounded-sm group-hover:bg-yellow-700 duration-300">
+                            <p class="text-xs text-yellow-700 group-hover:text-white p-2 uppercase duration-300">
+                                Chocolaspa BSD</p>
                         </div>
                     </div>
                     <!-- Overlay end-->
                 </a>
-                <a href="isi-promo.html">
+                <a href="isi-promo.html" class="relative group">
                     <img src="https://www.chocolaspa.com/media/photos/shared/promo/chocolaspa-membership-2024.jpg"
                         class="h-[23rem] w-auto" alt="" />
+                    <!-- Overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-amber-900/50 to-orange-100/40 flex flex-col items-start justify-center p-7 text-white transition-opacity">
+                        <div class="flex mb-2 mt-56 p-3">
+                            <h1 class="text-lg font-light uppercase">Chocolaspa Membership 2024</h1>
+                            <i
+                                class="fa-solid fa-arrow-right-long transform scale-75 p-5 bg-white text-black rounded-full opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </div>
+                        <div class="absolute top-5 text-lg bg-white rounded-sm group-hover:bg-yellow-700 duration-300">
+                            <p class="text-xs text-yellow-700 group-hover:text-white p-2 uppercase duration-300">Semua
+                                Outlet</p>
+                        </div>
+                    </div>
+                    <!-- Overlay end-->
                 </a>
-                <a href="isi-promo.html">
-                    <img src="https://www.chocolaspa.com/media/photos/shared/promo/promo-1.jpg"
+                <a href="isi-promo.html" class="relative group">
+                    <img src="https://www.chocolaspa.com/media/photos/shared/promo/chocolaspa-premiere-presale.webp"
                         class="h-[23rem] w-auto" alt="" />
+                    <!-- Overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-amber-900/50 to-orange-100/40 flex flex-col items-start justify-center p-7 text-white transition-opacity">
+                        <div class="flex mb-2 mt-56 p-3">
+                            <h1 class="text-lg font-light uppercase">Chocolaspa Premiere Presale</h1>
+                            <i
+                                class="fa-solid fa-arrow-right-long transform scale-75 p-5 bg-white text-black rounded-full opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </div>
+                        <div class="absolute top-5 text-lg bg-white rounded-sm group-hover:bg-yellow-700 duration-300">
+                            <p class="text-xs text-yellow-700 group-hover:text-white p-2 uppercase duration-300">
+                                Chocolaspa Premiere</p>
+                        </div>
+                    </div>
+                    <!-- Overlay end-->
                 </a>
             </div>
         </div>
@@ -472,7 +513,7 @@
 
             <div class="sm:flex sm:items-center sm:justify-between mt-28">
                 <a href="#" class="flex items-center">
-                    <img src="https://chocolaspa.loolin-dev.com/media/photos/shared/identity/logo.png" class="h-10 me-3"
+                    <img src="/img/logo.png" class="h-10 me-3"
                         alt="Chocolaspa Logo" />
                 </a>
                 <span class="text-sm opacity-65 sm:text-center">© 2024 Developed by
@@ -483,6 +524,7 @@
     <!-- Footer end -->
 
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/77df8fadc9.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -525,6 +567,56 @@
             setNavbarStyle(window.scrollY > 0);
         });
     </script>
+    <script>
+        var swiper = new Swiper(".multiple-slide-carousel", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".multiple-slide-carousel .swiper-button-next",
+                prevEl: ".multiple-slide-carousel .swiper-button-prev",
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 3,
+                    spaceBetween: 300
+                },
+                1028: {
+                    slidesPerView: 2,
+                    spaceBetween: 300
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
+        });
+    </script>
+    <script>
+            var swiperTestimony = new Swiper(".testimony-slide", {
+                loop: true,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                },
+            });
+    </script>
+
 </body>
 
 </html>

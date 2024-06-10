@@ -18,7 +18,7 @@ module.exports = {
         '670': '670ms'
       },
       backgroundImage: {
-        'text-about': "url('/img/title-background.png')"
+        'text-about': "url('../img/title-background.png')"
       },
       textShadow: {
         'outline': '2px 2px 0 #000'

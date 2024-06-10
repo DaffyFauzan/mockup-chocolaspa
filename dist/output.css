@@ -1488,6 +1488,10 @@ video {
   border-width: 0;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1722,8 +1726,16 @@ video {
   height: 13rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-600{
   height: 600px;
+}
+
+.h-72{
+  height: 18rem;
 }
 
 .h-8{
@@ -1750,14 +1762,6 @@ video {
   height: 100%;
 }
 
-.h-72{
-  height: 18rem;
-}
-
-.h-64{
-  height: 16rem;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -1776,6 +1780,10 @@ video {
 
 .w-48{
   width: 12rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-60{
@@ -1976,6 +1984,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]){
@@ -2183,36 +2197,36 @@ video {
   background-color: rgb(161 98 7 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/about-service-cover-simple\.png\'\)\]{
-  background-image: url('/img/about-service-cover-simple.png');
+.bg-\[url\(\'\.\.\/img\/about-service-cover-simple\.png\'\)\]{
+  background-image: url('../img/about-service-cover-simple.png');
 }
 
-.bg-\[url\(\'\/img\/cta-bg\.png\'\)\]{
-  background-image: url('/img/cta-bg.png');
+.bg-\[url\(\'\.\.\/img\/cta-bg\.png\'\)\]{
+  background-image: url('../img/cta-bg.png');
 }
 
-.bg-\[url\(\'\/img\/header-detail\.png\'\)\]{
-  background-image: url('/img/header-detail.png');
+.bg-\[url\(\'\.\.\/img\/header-detail\.png\'\)\]{
+  background-image: url('../img/header-detail.png');
 }
 
-.bg-\[url\(\'\/img\/line-bg\.png\'\)\]{
-  background-image: url('/img/line-bg.png');
+.bg-\[url\(\'\.\.\/img\/line-bg\.png\'\)\]{
+  background-image: url('../img/line-bg.png');
 }
 
-.bg-\[url\(\'\/img\/shape-bg\.png\'\)\]{
-  background-image: url('/img/shape-bg.png');
+.bg-\[url\(\'\.\.\/img\/shape-bg\.png\'\)\]{
+  background-image: url('../img/shape-bg.png');
 }
 
-.bg-\[url\(\'\/img\/tentang-tile1\.png\'\)\]{
-  background-image: url('/img/tentang-tile1.png');
+.bg-\[url\(\'\.\.\/img\/tentang-tile1\.png\'\)\]{
+  background-image: url('../img/tentang-tile1.png');
 }
 
-.bg-\[url\(\'\/img\/tentang-tile2\.png\'\)\]{
-  background-image: url('/img/tentang-tile2.png');
+.bg-\[url\(\'\.\.\/img\/tentang-tile2\.png\'\)\]{
+  background-image: url('../img/tentang-tile2.png');
 }
 
-.bg-\[url\(\'\/img\/tentang-tile3\.png\'\)\]{
-  background-image: url('/img/tentang-tile3.png');
+.bg-\[url\(\'\.\.\/img\/tentang-tile3\.png\'\)\]{
+  background-image: url('../img/tentang-tile3.png');
 }
 
 .bg-gradient-to-r{
@@ -2228,7 +2242,7 @@ video {
 }
 
 .bg-text-about{
-  background-image: url('/img/title-background.png');
+  background-image: url('../img/title-background.png');
 }
 
 .from-amber-900\/50{
